@@ -6,9 +6,8 @@ import android.view.View;
 
 import com.jc.mvvmrxjavaretrofitsample.model.data.RetrofitHelper;
 import com.jc.mvvmrxjavaretrofitsample.model.entity.Movie;
-import com.jc.mvvmrxjavaretrofitsample.view.ObserverOnNextListener;
-
-import java.util.List;
+import com.jc.mvvmrxjavaretrofitsample.view.CompletedListener;
+import com.jc.mvvmrxjavaretrofitsample.view.MovieAdapter;
 
 import rx.Subscriber;
 
@@ -20,11 +19,13 @@ public class MainViewModel {
     public ObservableField<Integer> progressBarVisibility;
     public ObservableField<Integer> errorInfoLayoutVisibility;
     public ObservableField<String> exception;
-    private ObserverOnNextListener<Movie> onNextListener;
     private Subscriber<Movie> subscriber;
+    private MovieAdapter movieAdapter;
+    private CompletedListener completedListener;
 
-    public MainViewModel(ObserverOnNextListener<Movie> onNextListener) {
-        this.onNextListener = onNextListener;
+    public MainViewModel(MovieAdapter movieAdapter,CompletedListener completedListener) {
+        this.movieAdapter = movieAdapter;
+        this.completedListener = completedListener;
         initData();
         getMovies();
     }
@@ -36,6 +37,7 @@ public class MainViewModel {
                 Log.d("[MainViewModel]", "onCompleted");
                 hideAll();
                 contentViewVisibility.set(View.VISIBLE);
+                completedListener.onCompleted();
             }
 
             @Override
@@ -47,7 +49,7 @@ public class MainViewModel {
 
             @Override
             public void onNext(Movie movie) {
-                onNextListener.onNext(movie);
+                movieAdapter.addItem(movie);
             }
         };
         RetrofitHelper.getInstance().getMovies(subscriber, 0, 20);

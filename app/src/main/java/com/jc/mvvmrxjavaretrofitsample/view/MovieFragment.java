@@ -6,20 +6,18 @@ import android.support.annotation.Nullable;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.jc.mvvmrxjavaretrofitsample.R;
 import com.jc.mvvmrxjavaretrofitsample.databinding.MovieFragmentBinding;
-import com.jc.mvvmrxjavaretrofitsample.model.entity.Movie;
 import com.jc.mvvmrxjavaretrofitsample.viewModel.MainViewModel;
 
 /**
  * Created by HaohaoChang on 2017/2/11.
  */
-public class MovieFragment extends Fragment implements ObserverOnNextListener<Movie>,SwipeRefreshLayout.OnRefreshListener{
+public class MovieFragment extends Fragment implements CompletedListener,SwipeRefreshLayout.OnRefreshListener{
 
     private static String TAG = MovieFragment.class.getSimpleName();
     private MainViewModel viewModel;
@@ -46,22 +44,21 @@ public class MovieFragment extends Fragment implements ObserverOnNextListener<Mo
         movieFragmentBinding.recyclerView.setAdapter(movieAdapter);
         movieFragmentBinding.swipeRefreshLayout.setColorSchemeResources(R.color.colorAccent, R.color.colorPrimary, R.color.colorPrimaryDark);
         movieFragmentBinding.swipeRefreshLayout.setOnRefreshListener(this);
-        viewModel = new MainViewModel(this);
+        viewModel = new MainViewModel(movieAdapter,this);
         movieFragmentBinding.setViewModel(viewModel);
 
-    }
-
-    @Override
-    public void onNext(Movie movie) {
-        if (movieFragmentBinding.swipeRefreshLayout.isRefreshing()) {
-            movieFragmentBinding.swipeRefreshLayout.setRefreshing(false);
-        }
-        movieAdapter.addItem(movie);
     }
 
     @Override
     public void onRefresh() {
         movieAdapter.clearItems();
         viewModel.refreshData();
+    }
+
+    @Override
+    public void onCompleted() {
+        if (movieFragmentBinding.swipeRefreshLayout.isRefreshing()) {
+            movieFragmentBinding.swipeRefreshLayout.setRefreshing(false);
+        }
     }
 }
