@@ -42,8 +42,6 @@ MVVM 模式将 Presenter 改名为 ViewModel，基本上与 MVP 模式完全一�
 
 ### [RxJava](https://github.com/ReactiveX/RxJava )
 
-![RxJava](https://github.com/githubhaohao/ImageRoom/blob/master/Images/mvvm/kotlin-android-rxjava.png?raw=true)
-
 RxJava 在 GitHub 主页上的自我介绍是 "a library for composing asynchronous and event-based programs using observable sequences for the Java VM"（一个在 Java VM 上使用可观测的序列来组成异步的、基于事件的程序的库）。
 
 Rx 是微软 .Net 的一个响应式扩展，Rx 借助可观测的序列提供一种简单的方式来创建异步的，基于事件驱动的程序。2012 年 Netflix 为了应对不断增长的业务需求开始将 .NET Rx 迁移到 JVM 上面。并于 13 年二月份正式向外展示了 RxJava 。
