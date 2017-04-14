@@ -2,7 +2,7 @@
 
 [![Scrutinizer Build](https://img.shields.io/scrutinizer/build/g/filp/whoops.svg)]() [![Hex.pm](https://img.shields.io/hexpm/l/plug.svg)]()
 
-在GitHub上看了几个关于MVVM设计模式的例子，发现他们并没有做到 View 层与 Model 层逻辑的完全分离，以此实践作为对 MVVM 的总结。
+在 GitHub 上看了几个关于 MVVM 设计模式的例子，发现他们并没有做到 View 层与 Model 层逻辑的完全分离，以此实践作为对 MVVM 的总结。
 
 ## 效果预览
 ![result](https://github.com/githubhaohao/MVVMRxJavaRetrofitSample/blob/master/image/sample.gif?raw=true)
