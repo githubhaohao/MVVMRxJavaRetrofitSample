@@ -68,3 +68,5 @@ RxJava 本质上是一个异步操作库，是一个能让你用极其简洁的�
 
 在今年的Google IO 2015 中，Google 在 support-v7 中新增了 Data Binding，使用 Data Binding可以直接在布局的 xml 中绑定布局与数据，从而简化代码，Android Data Binding是Android 的 MVVM 框架。因为 Data Binding 是包含在 support-v7 包里面的，所以可以向下兼容到最低 Android 2.1 (API level 7+).
 
+***更详细的内容请异步博客 [http://haohaochang.cn](http://haohaochang.cn/2017/02/12/MVVM%EF%BC%8CRxJava%E5%92%8CRetrofit%E7%9A%84%E4%B8%80%E6%AC%A1%E5%AE%9E%E8%B7%B5/)***
+
