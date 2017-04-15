@@ -2,10 +2,14 @@
 
 [![Scrutinizer Build](https://img.shields.io/scrutinizer/build/g/filp/whoops.svg)]() [![Hex.pm](https://img.shields.io/hexpm/l/plug.svg)]()
 
-在 GitHub 上看了几个关于 MVVM 设计架构的例子，发现他们并没有做到 View 层与 Model 层逻辑的完全分离，以此实践作为对 MVVM 的总结。
+在 GitHub 上看了几个关于 MVVM 设计架构的例子，发现他们并没有做到 View 层与 Model 层逻辑的完全分离，此作为对 MVVM 的总结。
 
 ## 效果预览
+
 ![result](https://github.com/githubhaohao/MVVMRxJavaRetrofitSample/blob/master/image/sample.gif?raw=true)
+
+[Demo 下载](https://github.com/githubhaohao/MVVMRxJavaRetrofitSample/blob/master/demo.apk)
+
 ## 准备知识
 ### MVC
 ![mvc](https://github.com/githubhaohao/ImageRoom/blob/master/Images/mvvm/mvc.PNG?raw=true)
@@ -54,9 +58,7 @@ RxJava 本质上是一个异步操作库，是一个能让你用极其简洁的�
 
 一个 Android 和 Java 上 HTTP 库（利用注解和 okhttp 来实现和服务器的数据交互）。
 
-{% blockquote %}
 [**Retrofit 官方文档:http://square.github.io/retrofit/**](http://square.github.io/retrofit/)
-{% endblockquote %}
 
 ### [DataBinding](https://developer.android.com/topic/libraries/data-binding/index.html)
 
@@ -65,6 +67,8 @@ RxJava 本质上是一个异步操作库，是一个能让你用极其简洁的�
 在今年的 Google IO 2015 中，Google 在 support-v7 中新增了 Data Binding，使用 Data Binding 可以直接在布局的 xml 中绑定布局与数据，从而简化代码，Android Data Binding 是Android 的 MVVM 框架。因为 Data Binding 是包含在 support-v7 包里面的，所以可以向下兼容到最低 Android 2.1 (API level 7+).
 
 ## 实践
+
+嫌代码不够高亮？请移步博客[http://haohaochang.cn](http://haohaochang.cn/2017/02/12/MVVM%EF%BC%8CRxJava%E5%92%8CRetrofit%E7%9A%84%E4%B8%80%E6%AC%A1%E5%AE%9E%E8%B7%B5/)
 
 直接上代码。
 
@@ -81,9 +85,7 @@ RxJava 本质上是一个异步操作库，是一个能让你用极其简洁的�
 
 ### API
 
-{% blockquote %}
 `https://api.douban.com/v2/movie/top250?start=0&count=20`
-{% endblockquote %}
 
 ### 引入DataBinding
 
