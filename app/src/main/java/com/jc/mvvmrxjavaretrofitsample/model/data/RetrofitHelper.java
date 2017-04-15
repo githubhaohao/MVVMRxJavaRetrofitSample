@@ -36,7 +36,7 @@ public class RetrofitHelper {
         return Singleton.INSTANCE;
     }
 
-    public RetrofitHelper() {
+    private RetrofitHelper() {
         builder = new OkHttpClient.Builder();
         builder.connectTimeout(DEFAULT_TIMEOUT, TimeUnit.SECONDS);
 
