@@ -23,7 +23,7 @@
 2. Controller 完成业务逻辑后，要求 Model 改变状态
 3. Model 将新的数据发送到 View，使用户得到反馈
 
-**缺陷**:View 和 Model 是相互可知，耦合性大，像 Activity 或者 Fragment 既是 Controller 层，由是 View 层，造成工程的可扩展性可维护性非常差。
+**缺陷**:View 和 Model 是相互可知，耦合性大，像 Activity 或者 Fragment 既是 Controller 层，又是 View 层，造成工程的可扩展性可维护性非常差。
 
 ### MVP
 ![mvp](https://github.com/githubhaohao/ImageRoom/blob/master/Images/mvvm/mvp.png?raw=true)
