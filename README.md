@@ -1,4 +1,4 @@
-![Cover](https://github.com/githubhaohao/ImageRoom/blob/master/Images/country-1295915__340.png?raw=true)
+<p align="center">![Cover](https://github.com/githubhaohao/ImageRoom/blob/master/Images/country-1295915__340.png?raw=true)</p>
 
 [![Scrutinizer Build](https://img.shields.io/scrutinizer/build/g/filp/whoops.svg)]() [![Hex.pm](https://img.shields.io/hexpm/l/plug.svg)]()
 
@@ -6,7 +6,7 @@
 
 ## 效果预览
 
-![result](https://github.com/githubhaohao/MVVMRxJavaRetrofitSample/blob/master/image/sample.gif?raw=true)
+<p align="center">![result](https://github.com/githubhaohao/MVVMRxJavaRetrofitSample/blob/master/image/sample.gif?raw=true)</p>
 
 [Demo 下载](https://github.com/githubhaohao/MVVMRxJavaRetrofitSample/blob/master/demo.apk)
 
