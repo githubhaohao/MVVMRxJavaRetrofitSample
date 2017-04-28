@@ -1,6 +1,4 @@
-![Cover](https://github.com/githubhaohao/ImageRoom/blob/master/Images/country-1295915__340.png?raw=true)
-
-[![Scrutinizer Build](https://img.shields.io/scrutinizer/build/g/filp/whoops.svg)]() [![Hex.pm](https://img.shields.io/hexpm/l/plug.svg)]()
+## Sample 简介
 
 在 GitHub 上看了几个关于 MVVM 设计架构的例子，发现他们并没有做到 View 层与 Model 层逻辑的完全分离，此实践作为对 MVVM 的总结。
 
