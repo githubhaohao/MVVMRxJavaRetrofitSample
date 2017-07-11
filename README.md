@@ -1,6 +1,8 @@
 ## Sample 简介
 
-在 GitHub 上看了几个关于 MVVM 设计架构的例子，发现他们并没有做到 View 层与 Model 层逻辑的完全分离，此实践作为对 MVVM 的总结。
+一个简单的结合 Retrofit 和 RxJava 框架实现 MVVM 架构的例子。
+
+最近在研究 Kotlin for Android，做了一个基于 Clean 架构以及 Retrofit ， RxKotlin ， Dagger 框架实现的 Kotlin for Android App ，更多详情请[戳这里](https://github.com/githubhaohao/DoubanBook)。
 
 ## 效果预览
 
