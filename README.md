@@ -2,7 +2,7 @@
 
 一个简单的结合 Retrofit 和 RxJava 框架实现 MVVM 架构的例子。
 
-最近在研究 Kotlin for Android，做了一个基于 Clean 架构以及 Retrofit ， RxKotlin ， Dagger 框架实现的 Kotlin for Android App ，更多详情请[戳这里](https://github.com/githubhaohao/DoubanBook)。
+最近在研究 [Kotlin](https://github.com/githubhaohao/JavaToKotlin) for Android，做了一个基于 Clean 架构以及 Retrofit ， RxKotlin ， Dagger 框架实现的 Kotlin for Android App ，更多详情请[戳这里](https://github.com/githubhaohao/DoubanBook)。
 
 ## 效果预览
 
